@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Side Bar</title>
+</head>
+
+<body>
+    <aside class="sidebar">
+        <input type="checkbox" name="open-sidebar" id="button">
+
+        <label class="toggle" for="button">
+            <i class="fa-solid fa-chevron-left"></i>
+        </label>
+        <header class="header">
+            <div class="logo">
+                <img src="https://github.blog/wp-content/uploads/2023/01/1200x640.png?resize=1200%2C640" alt="">
+            </div>
+            <div class="hidden">
+                <span>Fullname</span>
+                <span> example@gmail.com</span>
+            </div>
+        </header>
+
+        <form class="form">
+            <label for="button"><i class="fa-solid fa-magnifying-glass"></i></label>
+            <input type="text">
+        </form>
+
+        <nav class="menu">
+            <a href="#" class="active">
+                <div class="icon">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                        stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="7" height="9" x="3" y="3" rx="1"></rect>
+                        <rect width="7" height="5" x="14" y="3" rx="1"></rect>
+                        <rect width="7" height="9" x="14" y="12" rx="1"></rect>
+                        <rect width="7" height="5" x="3" y="16" rx="1"></rect>
+                    </svg>
+                </div>
+
+                <div class="hidden">Dasboard</div>
+            </a>
+
+            <a href="#">
+                <div class="icon">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3 19V5.70046C3 5.27995 3.26307 4.90437 3.65826 4.76067L13.3291 1.24398C13.5886 1.14961 13.8755 1.28349 13.9699 1.54301C13.9898 1.59778 14 1.65561 14 1.71388V6.6667L20.3162 8.77211C20.7246 8.90822 21 9.29036 21 9.72079V19H23V21H1V19H3ZM5 19H12V3.85543L5 6.40089V19ZM19 19V10.4416L14 8.77488V19H19Z">
+                        </path>
+                    </svg>
+                </div>
+
+                <div class="hidden">Revenue</div>
+            </a>
+
+            <a href="#">
+                <div class="icon">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill="none" d="M0 0h24v24H0V0z"></path>
+                        <path
+                            d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z">
+                        </path>
+                    </svg>
+                </div>
+
+                <div class="hidden">Notifications</div>
+            </a>
+
+            <a href="#">
+                <div class="icon">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                        stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 4m0 1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1z">
+                        </path>
+                        <path d="M7 20l10 0"></path>
+                        <path d="M9 16l0 4"></path>
+                        <path d="M15 16l0 4"></path>
+                        <path d="M8 12l3 -3l2 2l3 -3"></path>
+                    </svg>
+                </div>
+
+                <div class="hidden">Analytics</div>
+            </a>
+
+            <a href="#">
+                <div class="icon">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="Heart">
+                            <path
+                                d="M12,20.043a.977.977,0,0,1-.7-.288L4.63,13.08A5.343,5.343,0,0,1,6.053,4.513,5.266,5.266,0,0,1,12,5.371a5.272,5.272,0,0,1,5.947-.858A5.343,5.343,0,0,1,19.37,13.08l-6.676,6.675A.977.977,0,0,1,12,20.043ZM8.355,4.963A4.015,4.015,0,0,0,6.511,5.4,4.4,4.4,0,0,0,4.122,8.643a4.345,4.345,0,0,0,1.215,3.73l6.675,6.675,6.651-6.675a4.345,4.345,0,0,0,1.215-3.73A4.4,4.4,0,0,0,17.489,5.4a4.338,4.338,0,0,0-4.968.852h0a.744.744,0,0,1-1.042,0A4.474,4.474,0,0,0,8.355,4.963Z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="hidden">Likes</div>
+            </a>
+
+            <a href="#">
+                <div class="icon">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M216,64H56a8,8,0,0,1,0-16H192a8,8,0,0,0,0-16H56A24,24,0,0,0,32,56V184a24,24,0,0,0,24,24H216a16,16,0,0,0,16-16V80A16,16,0,0,0,216,64Zm0,128H56a8,8,0,0,1-8-8V78.63A23.84,23.84,0,0,0,56,80H216Zm-48-60a12,12,0,1,1,12,12A12,12,0,0,1,168,132Z">
+                        </path>
+                    </svg>
+                </div>
+
+                <div class="hidden">Wallets</div>
+            </a>
+        </nav>
+
+        <div class="user">
+            <div class="user-logo">
+                <img src="https://github.blog/wp-content/uploads/2023/01/1200x640.png?resize=1200%2C640" alt="">
+            </div>
+            <div class="name-email hidden">
+                Fullname
+                example@gmail.com
+            </div>
+            <button class="log-out-icon hidden">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M5 11H13V13H5V16L0 12L5 8V11ZM3.99927 18H6.70835C8.11862 19.2447 9.97111 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C9.97111 4 8.11862 4.75527 6.70835 6H3.99927C5.82368 3.57111 8.72836 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C8.72836 22 5.82368 20.4289 3.99927 18Z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </aside>
+    <div class="sidebar-text">Sidebar</div>
+</body>
+
+</html>
