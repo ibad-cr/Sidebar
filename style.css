@@ -13,32 +13,24 @@ body {
 }
 
 body {
-    padding: 10px;
     position: relative;
 }
 
-.sidebar-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    font-size: 50px;
-}
 
 .sidebar {
     width: 20%;
-    height: 97%;
     background: #222;
     border: 1px solid white;
     border-radius: 12px;
     padding: 0 10px;
     color: white;
-    position: relative;
     transition: 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
+    bottom: 10px;
+    top: 10px;
+    height: calc(100% - 20px);
     z-index: 1;
 
     input[name='open-sidebar'] {
@@ -64,6 +56,7 @@ body {
         align-items: center;
         justify-content: center;
         transition: top 0.3s ease-in-out;
+        cursor: pointer;
 
         i {
             color: white;
@@ -185,7 +178,6 @@ body {
         }
     }
 
-
     &:has(input[name='open-sidebar']:checked) {
         width: 64px;
 
@@ -220,8 +212,56 @@ body {
     }
 }
 
-@media (max-width: 576px) {
+.main {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0px 0px 80px;
+    white-space: nowrap;
+
+    .section-one {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        height: 100%;
+        font-size: 50px;
+        background: #000;
+        border-radius: 12px;
+    }
+
+    .section-two {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        height: 100%;
+        font-size: 50px;
+        background: #000;
+        border-radius: 12px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 575px) {
+    .sidebar {
+        width: 75%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
     .sidebar {
         width: 60%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .sidebar {
+        width: 38%;
+    }
+}
+
+@media (min-width: 993px)and (max-width: 1024px) {
+    .sidebar {
+        width: 30%;
     }
 }
