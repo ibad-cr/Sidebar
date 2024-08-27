@@ -140,6 +140,8 @@ body {
                 color: white;
                 text-decoration: none;
                 white-space: nowrap;
+                opacity: 1;
+                transition: 0.3s !important;
             }
 
             &.active {
@@ -169,6 +171,7 @@ body {
             background: none;
             border: none;
             cursor: pointer;
+            transition: 0.3s !important;
 
             svg {
                 width: 24px;
@@ -184,6 +187,7 @@ body {
         .hidden {
             opacity: 0;
             visibility: hidden;
+            transition: 0.3s !important;
         }
 
         .header {
@@ -215,7 +219,7 @@ body {
 .main {
     width: 100%;
     height: 100%;
-    padding: 10px 0px 0px 80px;
+    padding: 10px 15px 0px 80px;
     white-space: nowrap;
 
     .section-one {
@@ -242,15 +246,20 @@ body {
     }
 }
 
-@media (min-width: 400px) and (max-width: 575px) {
+@media (max-width: 576px) {
     .sidebar {
-        width: 75%;
+        width: 80%;
     }
-}
 
-@media (min-width: 576px) and (max-width: 768px) {
-    .sidebar {
-        width: 60%;
+    .main {
+
+        .section-one {
+            font-size: 20px;
+        }
+
+        .section-two {
+            font-size: 20px;
+        }
     }
 }
 
